@@ -182,12 +182,7 @@ let images = {
             ul2Tag.className = "cover";
             div.append(ul2Tag);
             ul2Tag.innerHTML = (key);
-           
-            let imageTag = document.createElement("img"); 
-            imageTag.className = "photo";
-            imageTag.src = images[key];
-            ul2Tag.append(imageTag);
-        
+                   
         var obj = information[key];
         for (var prop in obj){
             if (!obj.hasOwnProperty(prop))continue;
@@ -196,6 +191,10 @@ let images = {
             ul2Tag.append(liTag);
         }
         
+            let imageTag = document.createElement("img"); 
+            imageTag.className = "photo";
+            imageTag.src = images[key];
+            ul2Tag.append(imageTag);
     }  
     
         
