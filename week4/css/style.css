@@ -1,0 +1,25 @@
+.repository {
+    overflow: auto;
+    padding-left: 15%;
+    font-size: 30px;
+    border: solid 2px black;
+    border-radius: 10px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: antiquewhite;
+    color: crimson;
+}
+
+.repo-info {
+    float: right;
+    margin: 0;
+    padding-right: 40%;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.photo {
+    width: 25%;
+    padding-left: 35%;
+}
