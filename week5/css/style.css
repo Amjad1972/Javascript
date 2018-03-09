@@ -1,0 +1,113 @@
+body {
+    background-color: crimson;
+    
+}
+.zar {
+    float: left;
+    margin-bottom: 2%;
+    width: 100%;
+    font-size: 25px;
+    font-style: italic;
+    background-color: papayawhip;
+    color: purple;
+    font-weight: bold;
+    
+    
+}
+
+#myDiv {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+#main {
+    display: inline-flex;
+    flex-direction: column;
+    float: left;
+    width: 35%;
+    background-color: crimson;
+    font-size: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+
+#second {
+    width: 30%;
+    float: right;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    display: block;
+    margin: auto;
+    background-color: antiquewhite;
+    
+
+}
+
+.second2 {
+    font-style: italic;
+    height: 1100px;
+}
+
+.zar2 {
+    font-size: 13px;
+    font-family: cursive;
+    font-weight: bold;
+    margin-bottom: 3%;
+    background-color: antiquewhite;
+    border-radius: 25%;
+}
+
+#txt {
+    border-radius: 50%;
+    height: 80px;
+}
+
+
+
+.link {
+    font-size: 15px;
+    padding-bottom: 5%;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+.info2 {
+    font-size: 17px;
+    float: right;
+    margin-right: 35%;
+    width: 80%;
+    border-radius: 40%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+#zar3 {
+    width: 20%;
+    float: right;
+    padding-left: 10%;
+}
+
+#myBox {
+    font-size: 20px;
+    margin-bottom: 5%;
+    float: right;
+    margin-right: 30%;
+    
+}
+
+
+
+
+
+
+
