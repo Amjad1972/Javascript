@@ -3,11 +3,13 @@ let btn = document.querySelector('button');
 let div2 = document.getElementById("main");
 let div3 = document.getElementById("second");
 let div4 = document.getElementById("zar3");
+let div5 = document.getElementById("contrib");
+let div6 = document.getElementById("avatar");
 let btn3 = document.getElementById('info1');
 let myValue = document.getElementById('myBox');
 let dataSaved = undefined;
 
- 
+// fetch All repository data 
 btn.onclick = function(){
     while (div2.hasChildNodes()){
         div2.removeChild(div2.lastChild)
@@ -28,6 +30,7 @@ btn.onclick = function(){
       });
 }
 
+//Create buttons for each repository depend on repos. name and fetch url for every repo. name
 function makeButton(repository){
       let btn2 = document.createElement('button');
       let aTag = document.createElement('a');
@@ -47,15 +50,45 @@ function makeButton(repository){
                 return response.json();
             })
           
-            .then(function(names){
-                let string = JSON.stringify(names);
+            .then(function(repo){
+                let string = JSON.stringify(repo);
                 div3.innerHTML = (string);
+             
+                getContributors(repo);
             })
        
             
        };
 }
-    
+
+//Make for each repository connection with contibuters name and image using avatar_url
+function getContributors(repository){
+    while (div5.hasChildNodes()){
+        div5.removeChild(div5.lastChild)
+    }
+    while (div6.hasChildNodes()){
+        div6.removeChild(div6.lastChild)
+    }
+    fetch (repository.contributors_url)
+        .then(function(request){
+            return request.json();
+    })
+        .then(function(repo){
+
+        for (let i = 0; i < repo.length; i++){
+            let pTag = document.createElement("p");
+            let imgTag = document.createElement("img");
+            imgTag.className = ("photo");
+            imgTag.src = repo[i].avatar_url;
+            pTag.innerHTML += repo[i].login;
+            div5.appendChild(pTag);
+            imgTag.innerHTML = repo[i].avatar_url;
+            div6.appendChild(imgTag);
+            
+        }
+    })
+}
+//make function addEventListener when click search button execute repository data    
 btn3.addEventListener ('click', substitut);
     
     function substitut (){

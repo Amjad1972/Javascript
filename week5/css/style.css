@@ -105,7 +105,43 @@ a:hover {
     
 }
 
+#contrib {
+   width: 30%;
+    float: right;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    display: block;
+    margin: auto;
+    background-color: antiquewhite;
+    margin-right: 3%;
+    margin-top: 5%;
+    height: 300px;
+}
 
+#avatar {
+    width: 30%;
+    float: right;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    display: block;
+    margin: auto;
+    background-color: antiquewhite;
+    margin-right: 3%;
+    margin-top: 5%;
+    height: 300px;
+}
+
+.other {
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    color: crimson;
+}
+
+.photo {
+    width: 70%;
+    padding: 3%;
+}
 
 
 
