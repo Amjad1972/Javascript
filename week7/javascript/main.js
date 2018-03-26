@@ -21,11 +21,11 @@
 /*let numbers = [1, 2, 3, 4];
 let otherNum = numbers => numbers % 2 !== 0;
 const newNumbers = numbers.filter(otherNum).map(number => number * 2);
-console.log("The doubled numbers are",newNumbers); //[2,6]
+console.log("The doubled numbers are",newNumbers); //[2,6]*/
 
 //We can write above code in other way using two lines :
 
-let newNumbers = numbers
+/*let newNumbers = numbers
 .filter((number) => number % 2 !== 0)
 .map((number) => number * 2);
 console.log("The doubled numbers are",newNumbers); //[2,6]*/
@@ -34,10 +34,10 @@ console.log("The doubled numbers are",newNumbers); //[2,6]*/
 //2-Use the array of the previous assignment, write a program that add the even numbers to the resulting array twice, //but the odd numbers only once. Don't forget to use =>.
 
 /*let newNumbers = numbers.reduce(function(total, number){
+  total.push(number);
+  if(number % 2 == 0) {
     total.push(number);
-	if(number % 2 == 0) {
-    total.push(number);
-    }
+  }
 	return total;
 }, []);
 
