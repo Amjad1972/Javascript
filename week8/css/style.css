@@ -1,0 +1,49 @@
+body {
+    background-color: coral;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    font-family: fantasy;
+    font-weight: 300;
+    color: darkred;
+}
+
+.info {
+    margin-bottom: 2%;
+    margin-left: 5%;
+    font-size: 22px;
+    float: left;
+    flex-flow: row-reverse;
+    border: 2px red solid;
+    width: 25%;
+    background-color: burlywood;
+}
+
+.name {
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 4%;
+    color: purple;
+}
+
+.fork {
+    float: left;
+    margin-left: 2%;
+    color:#800000;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.stars {
+    float: right;
+    margin-right: 2%;
+    color: #800000;
+    font-weight: bold;
+    font-style: italic;
+    
+}
